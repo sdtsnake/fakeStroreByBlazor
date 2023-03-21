@@ -1,0 +1,80 @@
+@page "/productos"
+@inject ILogger<Productos> logger;
+@inject IProductoServicio productoServicio;
+@inject NavigationManager NavigationManager;
+@inject IJSRuntime JSRuntime;
+@inject IToastService toastService
+
+<PageTitle>Producto</PageTitle>
+
+<ModuleTitle Title="Producto" />
+<button class="btn btn-dark" @onclick="@(()=> NavigationManager.NavigateTo("/guardarprodcuto"))">Crear Producto</button>
+@code
+{
+    private List<Producto>? listProductos;
+    protected override async Task OnInitializedAsync()
+    {
+        await GetProductos();
+
+    }
+    private async Task GetProductos(){
+
+        listProductos = await productoServicio.Get();
+    }    
+
+    private async Task DeleteProducto(Producto producto){
+
+        if (!await JSRuntime.InvokeAsync<bool>("confirm", $"Se eliminara el producto {producto.Title}"))
+            return;
+
+
+        await productoServicio.Delete(producto.Id);
+        toastService.ShowSuccess($"Producto {producto.Title} ha sido elminado ");
+        await GetProductos();       
+    }
+
+    
+    private async Task ActualizarProducto(Producto producto){
+        NavigationManager.NavigateTo(NavigationManager.ToAbsoluteUri($"/modificarproducto/{producto.Id}").AbsoluteUri, true);
+    }
+
+}
+
+
+@if (listProductos != null && listProductos.Count > 0)
+{
+    <div class="productos-container">
+        @foreach (var producto in listProductos)
+        {
+            <div class="card">
+                @if (producto.Images != null && producto.Images.Count() > 0)
+                {
+                    <img class="card-img-top" src="@producto.Images[0]" alt="Produdcto" loading="lazy" width="270" height="210">
+                }               
+                <div class="card-body">
+                    <h4><b>@producto.Title</b></h4>
+                    <p>@producto.Price?.ToString("C")</p>
+                    <button title="Borrar" class="btn btn-danger btn-delete" @onclick="@(()=> DeleteProducto(producto))"><span class="oi oi-trash"></span></button>
+                    <button title="Actualizar" class="btn btn-dark" @onclick="@(()=> ActualizarProducto(producto))">Actualizar</button>
+
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <p>No Existen productos para consultar</p>
+}
+
+
+
+
+
+
+
+
+
+
+
+

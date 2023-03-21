@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/XrCON6kzmWZqxRVAhYI73ZLbQAwBZXUirzNgX9paA8=",
+  "Hash": "AHLMeY+wi6yPigZxAk/ptC63PKIh43Dqs5SjTwHn2bQ=",
   "Source": "BlazorApp",
   "BasePath": "/",
   "Mode": "Root",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\snake\\.nuget\\packages\\blazored.toast\\4.1.0\\staticwebassets\\Blazored.Toast.bundle.scp.css",
+      "SourceId": "Blazored.Toast",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\snake\\.nuget\\packages\\blazored.toast\\4.1.0\\staticwebassets\\",
+      "BasePath": "_content/Blazored.Toast",
+      "RelativePath": "Blazored.Toast.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\snake\\.nuget\\packages\\blazored.toast\\4.1.0\\staticwebassets\\Blazored.Toast.bundle.scp.css"
+    },
     {
       "Identity": "C:\\Users\\snake\\Documents\\curso\\BlazorApp\\BlazorApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.boot.json",
       "SourceId": "BlazorApp",
@@ -83,6 +100,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net6.0\\BlazorApp.pdb"
+    },
+    {
+      "Identity": "C:\\Users\\snake\\Documents\\curso\\BlazorApp\\BlazorApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Blazored.Toast.dll",
+      "SourceId": "BlazorApp",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\snake\\Documents\\curso\\BlazorApp\\BlazorApp\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.Toast.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\snake\\.nuget\\packages\\blazored.toast\\4.1.0\\lib\\net6.0\\Blazored.Toast.dll"
     },
     {
       "Identity": "C:\\Users\\snake\\Documents\\curso\\BlazorApp\\BlazorApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\dotnet.6.0.13.4xooxz9tok.js",
@@ -5712,6 +5746,23 @@
       "OriginalItemSpec": "C:\\Users\\snake\\Documents\\curso\\BlazorApp\\BlazorApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Transactions.dll"
     },
     {
+      "Identity": "C:\\Users\\snake\\Documents\\curso\\BlazorApp\\BlazorApp\\obj\\Debug\\net6.0\\build-gz\\qtItFkxe.gz",
+      "SourceId": "BlazorApp",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\snake\\Documents\\curso\\BlazorApp\\BlazorApp\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.Toast.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\snake\\Documents\\curso\\BlazorApp\\BlazorApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Blazored.Toast.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\snake\\Documents\\curso\\BlazorApp\\BlazorApp\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Blazored.Toast.dll"
+    },
+    {
       "Identity": "C:\\Users\\snake\\Documents\\curso\\BlazorApp\\BlazorApp\\obj\\Debug\\net6.0\\build-gz\\r+bYSD9z.gz",
       "SourceId": "BlazorApp",
       "SourceType": "Computed",
@@ -6900,6 +6951,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net6.0\\service-worker-assets.js.build"
+    },
+    {
+      "Identity": "C:\\Users\\snake\\Documents\\curso\\BlazorApp\\BlazorApp\\wwwroot\\appsettings.json",
+      "SourceId": "BlazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\snake\\Documents\\curso\\BlazorApp\\BlazorApp\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "appsettings.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "settings",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\appsettings.json"
     },
     {
       "Identity": "C:\\Users\\snake\\Documents\\curso\\BlazorApp\\BlazorApp\\wwwroot\\css\\app.css",

@@ -32,6 +32,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/snake/Documents/curso/BlazorApp/BlazorApp/Pages/ModuleTitle.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9kdWxlVGl0bGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/snake/Documents/curso/BlazorApp/BlazorApp/Pages/Productos/GuardarProducto.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdG9zXEd1YXJkYXJQcm9kdWN0by5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/snake/Documents/curso/BlazorApp/BlazorApp/Pages/Productos/ModificarProducto.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdG9zXE1vZGlmaWNhclByb2R1Y3RvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/snake/Documents/curso/BlazorApp/BlazorApp/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -39,6 +51,10 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/snake/Documents/curso/BlazorApp/BlazorApp/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/snake/Documents/curso/BlazorApp/BlazorApp/Pages/Productos/Productos.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdG9zXFByb2R1Y3Rvcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-qn84rjo26o
 
 [C:/Users/snake/Documents/curso/BlazorApp/BlazorApp/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=

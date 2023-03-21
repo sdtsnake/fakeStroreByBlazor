@@ -1,0 +1,95 @@
+﻿@page "/modificarproducto/{id?}"
+@inject IProductoServicio productoServicio
+@inject ICategoriaServicio categoriaServicio
+@inject NavigationManager NavigationManager
+
+<PageTitle>Modificar Producto</PageTitle>
+
+<ModuleTitle Title="Modificar producto"></ModuleTitle>
+
+<button class="btn btn-dark" @onclick="@(()=> NavigationManager.NavigateTo("/productos"))">Lista Prodcutos</button>
+
+<EditForm Model="@producto" OnSubmit="@ActualizarProducto">
+    <div class="row">
+        <div class="col-8 form-group">
+            <label for="title" class="col-form-label">Descripcion</label>
+            <InputText id="title" @bind-Value="producto.Title" required class="form-control" />
+        </div>
+        <div class="col form-group">
+            <label for="price" class="col-form-label">Valor</label>
+            <InputNumber id="price" @bind-Value="producto.Price" min="0" required class="form-control" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col form-group">
+            <label for="categoria" class="col-form-label">Categoria</label>
+            <InputSelect id="category" @bind-Value="producto.category.Id">
+                <option>Select Category...</option>
+                @foreach (var categoria in categorias)
+                {
+                  <option value="@categoria.Id">@categoria.Name</option>;   
+                }
+            </InputSelect>
+        </div>
+        <div class="col form-group">
+            <label for="image" class="col-form-label">Url Imagen</label>
+            <InputText id="image" @bind-Value="producto.Image" required class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="description" class="col-form-label">Description</label>
+        <InputTextArea id="description" @bind-Value="producto.Description" required class="form-control"></InputTextArea>
+    </div>
+
+    <hr />
+    <button class="btn btn-primary" type="submit">Actualizar</button>
+
+
+
+
+</EditForm>
+
+
+@code {
+
+    [Parameter]
+    public string? id { get; set; }
+
+    public override async Task SetParametersAsync(ParameterView parameters)
+    {
+        if (parameters.TryGetValue<String>(nameof(this.id), out var id))
+        {
+            if (id is not null)
+            {
+                this.id = id;
+            }
+        }
+
+        await base.SetParametersAsync(parameters);
+    }
+
+    private Producto producto = new();
+    private List<Categoria> categorias = new List<Categoria>();
+
+    protected override async Task OnInitializedAsync(){
+        categorias = await categoriaServicio.Get();
+        producto = await FindProducto(int.Parse(id));
+        foreach (string imagen in producto.Images)
+        {
+            if (!string.IsNullOrEmpty(imagen))
+            {
+                producto.Image = imagen;
+                break;
+            }
+        }
+    }
+
+    private async Task<Producto> FindProducto(int id){
+        return await productoServicio.FindById(id);
+    }
+
+    private async Task ActualizarProducto(){
+        await productoServicio.Update(producto);
+        NavigationManager.NavigateTo("/productos");
+    }
+}

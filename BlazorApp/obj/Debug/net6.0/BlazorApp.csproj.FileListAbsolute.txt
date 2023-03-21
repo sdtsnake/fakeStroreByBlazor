@@ -822,3 +822,8 @@ C:\Users\snake\Documents\curso\BlazorApp\BlazorApp\obj\Debug\net6.0\BlazorApp.dl
 C:\Users\snake\Documents\curso\BlazorApp\BlazorApp\obj\Debug\net6.0\refint\BlazorApp.dll
 C:\Users\snake\Documents\curso\BlazorApp\BlazorApp\obj\Debug\net6.0\BlazorApp.pdb
 C:\Users\snake\Documents\curso\BlazorApp\BlazorApp\obj\Debug\net6.0\ref\BlazorApp.dll
+C:\Users\snake\Documents\curso\BlazorApp\BlazorApp\obj\Debug\net6.0\scopedcss\Pages\Productos\Productos.razor.rz.scp.css
+C:\Users\snake\Documents\curso\BlazorApp\BlazorApp\bin\Debug\net6.0\wwwroot\_framework\Blazored.Toast.dll
+C:\Users\snake\Documents\curso\BlazorApp\BlazorApp\bin\Debug\net6.0\wwwroot\_framework\Blazored.Toast.dll.gz
+C:\Users\snake\Documents\curso\BlazorApp\BlazorApp\bin\Debug\net6.0\Blazored.Toast.dll
+C:\Users\snake\Documents\curso\BlazorApp\BlazorApp\obj\Debug\net6.0\build-gz\qtItFkxe.gz

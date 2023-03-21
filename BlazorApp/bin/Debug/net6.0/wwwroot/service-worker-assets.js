@@ -61,7 +61,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-1Rna75NRCoZ08kVyNMzpjeIRDSgxzBb1xMwCDoeDLRQ=",
+      "hash": "sha256-isHSCLeQD4sc8f6mbzKLCHw5b\/G0f3yZFZypbHS8rYk=",
       "url": "index.html"
     },
     {
@@ -73,8 +73,16 @@
       "url": "sample-data\/weather.json"
     },
     {
-      "hash": "sha256-yCk27oMTUeOX3B2ofVUVA+QdpeTZNt2+hwJtNVccA5U=",
+      "hash": "sha256-uE9sxzuGx3SpT\/GQZU1wOl+9BoTVCjUs4Q84dviCRUo=",
       "url": "BlazorApp.styles.css"
+    },
+    {
+      "hash": "sha256-8kri+uYEwKq4TfaXPyjAICz+93v6cMvFRycJQ\/z16pk=",
+      "url": "appsettings.json"
+    },
+    {
+      "hash": "sha256-GXXa2A08YD6PhpIFoBX+kgnsZS1fcddkt\/Sv5IUHdz8=",
+      "url": "_framework\/Blazored.Toast.dll"
     },
     {
       "hash": "sha256-mU8wXrw1NaAfoswi7J10exqtK90y6UBTDA8jt1T84BQ=",
@@ -861,11 +869,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-If7w7W3vf\/CFhEbLjm8RyzbRKM1OS95veHLJnRMSBnA=",
+      "hash": "sha256-Wwv4Oea4xOFgqpmZUKwJuRZwl2gnslvOBNgx8WUlyBw=",
       "url": "_framework\/BlazorApp.dll"
     },
     {
-      "hash": "sha256-P4MO4DXIftjtRwXiCqTVjdCNhBpYVNSue1vQ3P7M20o=",
+      "hash": "sha256-zShzOEAkHzLU1jB77wnzuews06XSveOhlBc84r\/heh8=",
       "url": "_framework\/BlazorApp.pdb"
     },
     {
@@ -873,9 +881,13 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-JEJVqSoe8nZYR0M4XuAdauQylyQcINMZCSKUGhfSLLU=",
+      "hash": "sha256-i9+tYxJwe36EqJqkC7rEFtST2PD+NaAAaHR2Hiqb694=",
       "url": "_framework\/blazor.boot.json"
+    },
+    {
+      "hash": "sha256-UvwTBwDrCS9yh35f14Sx+NrDIVftgIzc2IyOkol9to0=",
+      "url": "_content\/Blazored.Toast\/Blazored.Toast.bundle.scp.css"
     }
   ],
-  "version": "V\/af0ItW"
+  "version": "vd7gGIXE"
 };
